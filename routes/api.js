@@ -17,7 +17,7 @@ router.post('/random', (req, res, next) => {
       .catch(next)
   }else {
     res.json({
-      error: "The input field is empty"
+      error: "The max number is empty"
     })
   }
 });
