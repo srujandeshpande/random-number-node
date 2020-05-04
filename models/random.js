@@ -10,6 +10,6 @@ const RandomSchema = new Schema({
 })
 
 //create model for todo
-const Todo = mongoose.model('todo', TodoSchema);
+const Random = mongoose.model('random', RandomSchema);
 
-module.exports = Todo;
+module.exports = Random;
