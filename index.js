@@ -1,12 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const routes = require('./routes/api');
+const api = require('./routes/api');
 const path = require('path');
 require('dotenv').config();
 
 const app = express();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;w
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -16,7 +16,7 @@ app.use((req, res, next) => {
 
 app.use(bodyParser.json());
 
-app.use('/api', routes);
+app.use('/api', api);
 
 app.use((err, req, res, next) => {
   console.log(err);
