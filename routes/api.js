@@ -5,9 +5,11 @@ const Random = require('../models/random');
 router.get('/todos', (req, res, next) => {
 
   //this will return all the data, exposing only the id and action field to the client
-  Random.find({}, 'action')
-    .then(data => res.json(data))
-    .catch(next)
+  //Random.find({}, 'action')
+    //.then(data => res.json(data))
+    //.catch(next)
+
+  res.json("hi")
 });
 
 router.post('/todos', (req, res, next) => {
