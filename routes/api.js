@@ -3,15 +3,18 @@ const router = express.Router();
 const Random = require('../models/random');
 
 router.get('/dice', (req, res, next) => {
-  if(req.body.sides){
-    res.json(req.body.sides);
-  }
   //this will return all the data, exposing only the id and action field to the client
   //Random.find({}, 'action')
     //.then(data => res.json(data))
     //.catch(next)
   var num = Math.floor(Math.random() * 6) + 1;
-  res.json();
+  res.json(num);
+});
+
+router.get('/dice:sides', (req, res, next) => {
+  sids = req.params.sides
+  var num = Math.floor(Math.random() * sids) + 1;
+  res.json(num);
 });
 
 router.post('/todos', (req, res, next) => {
