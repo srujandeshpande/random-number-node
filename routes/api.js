@@ -13,7 +13,7 @@ router.get('/dice', (req, res, next) => {
 
 router.get('/dice:sides', (req, res, next) => {
   sids = req.params.sides
-  //var num = Math.floor(Math.random() * sids) + 1;
+  var num = Math.floor(Math.random() * sids) + 1;
   res.json(sids);
 });
 
