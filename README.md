@@ -1,4 +1,6 @@
 # random-number-node
 Random number generator built to learn Node.js, Express and React.js
-Using MERN Stack  
-MongoDB hosted on Atlas
+Using MERN Stack an MongoDB hosted on Atlas
+
+## How to run
+1. Clone/Fork/Download this project
